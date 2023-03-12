@@ -9,7 +9,7 @@ node {
 
     stage('Build image') {
   
-       app = docker.build("darnattp/test-server")
+       app = docker.build("darnattp/basic-k8s-todo-server")
     }
 
     stage('Test image') {
