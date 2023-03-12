@@ -27,8 +27,8 @@ node {
         }
     }
     
-    // stage('Trigger ManifestUpdate') {
-    //             echo "triggering updatemanifestjob"
-    //             build job: 'updatemanifest', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
-    ////     }
+    stage('Trigger ManifestUpdate') {
+                echo "triggering update-todo-server-manifest job"
+                build job: 'update-todo-server-manifest', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
+    //     }
 }
