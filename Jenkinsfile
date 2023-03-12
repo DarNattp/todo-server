@@ -32,3 +32,4 @@ node {
                 build job: 'update-todo-server-manifest', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
     //     }
 }
+}
